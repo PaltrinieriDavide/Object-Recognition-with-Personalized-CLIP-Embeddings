@@ -1,0 +1,113 @@
+Dataset /homes/dpaltrinieri/multiclass_sdod/data/splitted/similarities_datset_train.csv opened correctly.
+Dataset /homes/dpaltrinieri/multiclass_sdod/data/splitted/similarities_datset_test.csv opened correctly.
+Loaded backend agg version v2.2.
+Model name: LogisticRegression
+Best parameters: {'model__C': 1, 'model__penalty': 'l1', 'model__solver': 'liblinear'}
+Mean CV accuracy: 0.8645
+Mean CV precision: 0.8744
+Mean CV recall: 0.8645
+Mean CV F1 Score: 0.8639
+
+------------------------------
+
+Model name: LogisticRegression_fs
+Best parameters: {'model__C': 1, 'model__penalty': 'l1', 'model__solver': 'liblinear'}
+Mean CV accuracy: 0.8808
+Mean CV precision: 0.8897
+Mean CV recall: 0.8808
+Mean CV F1 Score: 0.8798
+
+------------------------------
+
+Model name: KNeighborsClassifier
+Best parameters: {'model__n_neighbors': 7, 'model__weights': 'distance'}
+Mean CV accuracy: 0.7537
+Mean CV precision: 0.7638
+Mean CV recall: 0.7537
+Mean CV F1 Score: 0.7524
+
+------------------------------
+
+Model name: KNeighborsClassifier_fs
+Best parameters: {'model__n_neighbors': 3, 'model__weights': 'uniform'}
+Mean CV accuracy: 0.7610
+Mean CV precision: 0.7687
+Mean CV recall: 0.7610
+Mean CV F1 Score: 0.7598
+
+------------------------------
+
+Model name: SVC
+Best parameters: {'model__C': 10, 'model__gamma': 'scale', 'model__kernel': 'linear'}
+Mean CV accuracy: 0.8650
+Mean CV precision: 0.8705
+Mean CV recall: 0.8650
+Mean CV F1 Score: 0.8643
+
+------------------------------
+
+Model name: SVC_fs
+Best parameters: {'model__C': 10, 'model__gamma': 'scale', 'model__kernel': 'linear'}
+Mean CV accuracy: 0.8981
+Mean CV precision: 0.9104
+Mean CV recall: 0.8981
+Mean CV F1 Score: 0.8966
+
+------------------------------
+
+Model name: DecisionTreeClassifier
+Best parameters: {'model__criterion': 'entropy', 'model__max_depth': None, 'model__min_samples_split': 2}
+Mean CV accuracy: 0.7096
+Mean CV precision: 0.7218
+Mean CV recall: 0.7096
+Mean CV F1 Score: 0.7073
+
+------------------------------
+
+Model name: DecisionTreeClassifier_fs
+Best parameters: {'model__criterion': 'gini', 'model__max_depth': None, 'model__min_samples_split': 2}
+Mean CV accuracy: 0.7511
+Mean CV precision: 0.7579
+Mean CV recall: 0.7511
+Mean CV F1 Score: 0.7456
+
+------------------------------
+
+Model name: RandomForestClassifier
+Best parameters: {'model__max_depth': 10, 'model__min_samples_split': 2, 'model__n_estimators': 50}
+Mean CV accuracy: 0.7873
+Mean CV precision: 0.8094
+Mean CV recall: 0.7873
+Mean CV F1 Score: 0.7835
+
+------------------------------
+
+Model name: RandomForestClassifier_fs
+Best parameters: {'model__max_depth': 20, 'model__min_samples_split': 2, 'model__n_estimators': 200}
+Mean CV accuracy: 0.8041
+Mean CV precision: 0.8304
+Mean CV recall: 0.8041
+Mean CV F1 Score: 0.7996
+
+------------------------------
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+Miglior Modello: SVC_fs
+
+The model uses Feature Selection
+Best Cross-Validation Accuracy: 0.898109243697479
+Valutazione finale sul set di test:
+Metrics: {'accuracy': 0.9, 'precision': 0.9, 'recall': 0.9, 'f1': 0.9, 'conf_matrix': array([[9, 1],
+       [1, 9]])}
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.90      0.90      0.90        10
+         1.0       0.90      0.90      0.90        10
+
+    accuracy                           0.90        20
+   macro avg       0.90      0.90      0.90        20
+weighted avg       0.90      0.90      0.90        20
+
+locator: <matplotlib.ticker.AutoLocator object at 0x7f614e567370>
